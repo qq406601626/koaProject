@@ -5,12 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node app.js --watch app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@koa/router": "^12.0.1",
-    "koa": "^2.15.3"
+    "koa": "^2.15.3",
+    "mysql2": "^3.9.7"
   }
 }
