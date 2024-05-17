@@ -5,6 +5,13 @@ const router = new Router({
 })
 router.use(log)
 router.get('/test',async (ctx,next)=>{
-    ctx.response.body = 'this is user api of test'
+    ctx.body = {
+        name:'zhangsan',
+        age:18
+    }
+    // return {
+    //     name:'zhangsan',
+    //     age:18
+    // }
 })
 export default router
