@@ -1,4 +1,4 @@
-const log = (ctx,next)=>{
-    next()
+const log = async (ctx,next)=>{
+    await next()
 }
 export  {log}
